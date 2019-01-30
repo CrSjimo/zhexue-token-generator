@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>哲♂学</title>
+</head>
+<body>
+<h1>哲♂学关键字自动添加哲♂学符号</h1>
+<div>v0.3.2_beta</div>
+<a href="https://github.com/CrSjimo/zhexue-token-generator"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" style="position:absolute;right:0;top:0"></a>
+<textarea placeholder="请输入待转换文本" style="width:100%;height:200px"></textarea>
+<button style="margin:4px 0">转换</button>
+<textarea readonly placeholder="转换结果" style="width:100%;height:200px"></textarea>
+<script>
+document.querySelector("button").onclick=()=>{
+	let txt=document.querySelector("textarea").value;
+	let keywords=["哲学","ass we can","deep","dark","boy","door","van","男","颁奖","万","玩","完"];
+	let rk=["哲♂学","ass♂we♂can♂","deep♂","dark♂","boy♂","door♂","van♂","男♂","颁奖♂","van♂","van♂","van♂"];
+	for(let i=0;i<rk.length;i++){
+		txt=txt.replace(new RegExp(keywords[i],"g"),rk[i]);
+	}
+	document.querySelector("textarea").value=txt;
+}
+</script>
+</body>
+</html>
