@@ -18,7 +18,7 @@ document.querySelector("button").onclick=()=>{
 	for(let i=0;i<rk.length;i++){
 		txt=txt.replace(new RegExp(keywords[i],"g"),rk[i]);
 	}
-	document.querySelector("textarea").value=txt;
+	document.querySelector("textarea[readonly]").value=txt;
 }
 </script>
 </body>
