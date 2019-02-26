@@ -13,8 +13,8 @@
 <script>
 document.querySelector("button").onclick=()=>{
 	let txt=document.querySelector("textarea").value;
-	let keywords=["哲学","ass we can","deep","dark","boy","door","van","男","颁奖","万","玩","完","难"];
-	let rk=["哲♂学","ass♂we♂can♂","deep♂","dark♂","boy♂","door♂","van♂","男♂","颁♂奖","van♂","van♂","van♂","男♂"];
+	let keywords=["哲学","ass we can","deep","dark","boy","door","van","男","颁奖","万","玩","完","难","fa","摔跤","更衣室"];
+	let rk=["哲♂学","ass♂we♂can♂","deep♂","dark♂","boy♂","door♂","van♂","男♂","颁♂奖","van♂","van♂","van♂","男♂","fa♂","摔♂跤","更衣♂室"];
 	for(let i=0;i<rk.length;i++){
 		txt=txt.replace(new RegExp(keywords[i],"g"),rk[i]);
 	}
